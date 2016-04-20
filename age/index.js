@@ -10,6 +10,9 @@ module.exports = function(params, res) {
   var bDay = parseInt(params.shift());
   var bYear = parseInt(params.shift());
 
+  if(bDay > 31 || bMonth > 12) {
+    res.end("!");
+  }
   var age = tYear - bYear;
   if(bMonth > tMonth) {
     age--;
@@ -18,6 +21,7 @@ module.exports = function(params, res) {
       age--;
     }
   }
+
   res.end(age.toString());
 
 };
