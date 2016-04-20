@@ -1,6 +1,6 @@
 'use strict';
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 var http = require('http');
 var fs = require('fs');

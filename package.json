@@ -1,0 +1,28 @@
+{
+  "name": "custom-apis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "md5": "^2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "5.10.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lazy-monk/custom-apis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lazy-monk/custom-apis/issues"
+  },
+  "homepage": "https://github.com/lazy-monk/custom-apis#readme"
+}
