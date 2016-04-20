@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Custom APIs</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <h1>Custom APIs</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6 col-md-6 thumbnail">
+          <h4>Gravatar</h4>
+          <form class="gravatar-search search">
+            <input type="text" class="search-bar gravatar-search-bar" value="/gravatar/">
+          </form>
+
+          <div class=info>
+            <p>Enter your email address used in Gravatar.</p>
+            <p>For example: <span class="span-class">/gravatar/someone@example.com</span></p>
+          </div>
+
+          <div class="image"></div>
+        </div>
+
+
+        <div class="col-xs-6 col-md-6 thumbnail">
+          <h4>Math</h4>
+          <form class="math-search search">
+            <input type="text" class="search-bar math-search-bar" value="/math/">
+          </form>
+
+          <div class=info>
+            <p>/math/[add, subtract, multiply, divide]/value1/value2/...</p>
+            <p>Examples:</p>
+            <p>Addition: <span class="span-class">/math/add/value1/value2/...</span></p>
+            <p>Subtract: <span class="span-class">/math/subtract/value1/value2</span></p>
+            <p>Multiply: <span class="span-class">/math/multiply/value1/value2/...</span></p>
+            <p>Division: <span class="span-class">/math/divide/value1/value2</span></p>
+          </div>
+
+          <div class="math-result"></div>
+
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-xs-6 col-md-6 thumbnail">
+          <h4>Sentence Analyzer</h4>
+          <form class="analyze-search search">
+            <input type="text" class="search-bar analyze-search-bar" value="/analyze/">
+          </form>
+
+          <div class=info>
+            <p>Enter a sentence separated by space.</p>
+            <p>Examples: <span class="span-class">/analyze/This is a sentence.</span></p>
+          </div>
+
+          <div class="analyze-result"></div>
+        </div>
+
+
+        <div class="col-xs-6 col-md-6 thumbnail">
+          <h4>Age Calculator</h4>
+          <form class="age-search search">
+            <input type="text" class="search-bar age-search-bar" value="/age/">
+          </form>
+          <div class=info>
+            <p>Enter your birthdate(mm/dd/yyyy) to calculate your age.</p>
+            <p>Examples: <span class="span-class">/age/04/01/1988</span></p>
+          </div>
+
+          <div class="age-result"></div>
+        </div>
+      </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
